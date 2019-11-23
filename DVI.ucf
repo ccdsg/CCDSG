@@ -1,0 +1,66 @@
+Net rst				LOC = A19;
+
+NET "rst_b" LOC = AP17;
+
+
+Net clk_66m 					LOC = U23;
+
+
+Net SCL				LOC=AN10;                         
+
+Net SDA 				LOC=AP10;
+
+## DVI Constraints
+Net dvi_d<0>					LOC=AJ19;
+
+Net dvi_d<1>					LOC=AH19;
+
+Net dvi_d<2>					LOC=AM17;
+
+Net dvi_d<3>					LOC=AM16;
+
+Net dvi_d<4>					LOC=AD17;
+
+Net dvi_d<5>					LOC=AE17;
+
+Net dvi_d<6>					LOC=AK18;
+
+Net dvi_d<7>					LOC=AK17;
+
+Net dvi_d<8>					LOC=AE18;
+
+Net dvi_d<9>					LOC=AF18;
+
+Net dvi_d<10>					LOC=AL16;
+
+Net dvi_d<11>					LOC=AK16;
+
+Net dvi_xclk_p					LOC=AC18;
+
+Net dvi_xclk_n					LOC=AC17;
+
+Net hsync_out					LOC=AN17;
+
+Net vsync_out					LOC=AD15;
+
+Net de							LOC=AD16;
+
+#uart
+
+NET "din"                      LOC = "J24";    ## 24  on U34 
+NET "tx"                      LOC = "J25";    ## 25  on U34 
+
+
+NET "rgb_led[0]"                 LOC = "AC22";   ## 2   on LED DS12, 1 on J62 
+NET "rgb_led[1]"                    LOC = "AC24";   ## 2   on LED DS11, 2 on J62 
+NET "rgb_led[2]"                    LOC = "AE22";   ## 2   on LED DS9,  3 on J62 
+NET "rgb_led[3]"                    LOC = "AE23";   ## 2   on LED DS10, 4 on J62 
+NET "rgb_led[4]"                    LOC = "AB23";   ## 2   on LED DS15, 5 on J62 
+NET "rgb_led[5]"                    LOC = "AG23";   ## 2   on LED DS14, 6 on J62 
+NET "rgb_led[6]"                    LOC = "AE24";   ## 2   on LED DS22, 7 on J62 
+NET "rgb_led[7]"                    LOC = "AD24";   ## 2   on LED DS21, 8 on J62 
+
+NET "pic_done"                    LOC = "AP24";   ## 2   on LED DS16 
+NET "download"                    LOC = "AE21";   ## 2   on LED DS19 
+NET "wr_ram"							LOC="AH27"  ;
+NET "sw8"                  LOC = "K21";    ## 8   on SW1 DIP switch (active-High) 
